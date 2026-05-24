@@ -1,0 +1,23 @@
+{
+  "name": "@eff-facade/skill-creator",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Tool-facing EFF Facade business Skill authoring instructions and helpers.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -b tsconfig.json",
+    "typecheck": "tsc -b tsconfig.json"
+  },
+  "dependencies": {
+    "@eff-facade/core": "workspace:*"
+  }
+}

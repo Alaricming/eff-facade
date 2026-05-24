@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "0.1",
+  "id": "dictionary-skill",
+  "name": "字典管理 Skill",
+  "description": "用于创建业务字典和字典枚举项",
+  "version": "0.0.0",
+  "skillDoc": "./skill.md",
+  "riskLevel": "medium",
+  "abilities": [
+    {
+      "id": "create_dictionary",
+      "title": "创建字典",
+      "description": "创建业务字典和枚举项",
+      "entry": "./apis/create-dictionary.ts",
+      "exportName": "createDictionary",
+      "renderType": "mixed",
+      "requiresConfirmation": false
+    }
+  ],
+  "components": [
+    {
+      "id": "dictionary_preview",
+      "title": "字典预览",
+      "entry": "./components/DictionaryPreview.vue",
+      "componentType": "vue"
+    }
+  ]
+}

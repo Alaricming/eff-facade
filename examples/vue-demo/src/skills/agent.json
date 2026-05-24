@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "0.1",
+  "id": "vue-demo-agent",
+  "name": "Vue Demo Agent",
+  "description": "MVP demo agent for EFF Facade",
+  "version": "0.0.0",
+  "skills": [
+    {
+      "id": "dictionary-skill",
+      "path": "./dictionary-skill",
+      "enabled": true
+    },
+    {
+      "id": "business-skill",
+      "path": "./business-skill",
+      "enabled": true
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/core" },
+    { "path": "./packages/runtime" },
+    { "path": "./packages/schema-ui" },
+    { "path": "./packages/skill-creator" },
+    { "path": "./packages/model-adapter" },
+    { "path": "./packages/skill-loader" },
+    { "path": "./packages/vite-plugin" },
+    { "path": "./packages/workbench" },
+    { "path": "./packages/vue-renderer" },
+    { "path": "./packages/facade" },
+    { "path": "./packages/mock-server" }
+  ]
+}

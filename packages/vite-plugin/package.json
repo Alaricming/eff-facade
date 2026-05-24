@@ -1,0 +1,28 @@
+{
+  "name": "@eff-facade/vite-plugin",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -b tsconfig.json"
+  },
+  "dependencies": {
+    "@eff-facade/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2"
+  },
+  "peerDependencies": {
+    "vite": "^6.0.0"
+  }
+}

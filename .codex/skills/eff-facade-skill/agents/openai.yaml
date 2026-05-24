@@ -1,0 +1,4 @@
+interface:
+  display_name: "EFF Facade Development"
+  short_description: "Project-specific development rules for the EFF Facade codebase."
+  default_prompt: "Use eff-facade-skill to keep EFF Facade code clean, modular, token-driven, Tailwind-based, and consistent with the project architecture."

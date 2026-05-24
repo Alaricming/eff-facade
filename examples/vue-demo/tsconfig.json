@@ -1,0 +1,31 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "jsx": "preserve",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "outDir": "dist-types",
+    "rootDir": "../..",
+    "types": ["vite/client"],
+    "paths": {
+      "@eff-facade/facade": ["../../packages/facade/src/index.ts"],
+      "@eff-facade/facade/vite": ["../../packages/facade/src/vite.ts"],
+      "@eff-facade/core": ["../../packages/core/src/index.ts"],
+      "@eff-facade/model-adapter": ["../../packages/model-adapter/src/index.ts"],
+      "@eff-facade/runtime": ["../../packages/runtime/src/index.ts"],
+      "@eff-facade/schema-ui": ["../../packages/schema-ui/src/index.ts"],
+      "@eff-facade/skill-loader": ["../../packages/skill-loader/src/index.ts"],
+      "@eff-facade/vite-plugin": ["../../packages/vite-plugin/src/index.ts"],
+      "@eff-facade/workbench": ["../../packages/workbench/src/index.ts"],
+      "@eff-facade/vue-renderer": ["../../packages/vue-renderer/src/index.ts"]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.vue",
+    "vite.config.ts",
+    "../../packages/*/src/**/*.ts",
+    "../../packages/vue-renderer/src/**/*.vue",
+    "../../packages/workbench/src/**/*.vue"
+  ]
+}

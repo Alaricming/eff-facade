@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "0.1",
+  "id": "business-skill",
+  "name": "业务操作 Skill",
+  "description": "用于验证确认卡、链接卡、信息查询展示",
+  "version": "0.0.0",
+  "skillDoc": "./skill.md",
+  "riskLevel": "medium",
+  "abilities": [
+    {
+      "id": "create_sku",
+      "title": "创建 SKU",
+      "description": "创建 SKU 前先展示二次确认卡",
+      "entry": "./apis/create-sku.ts",
+      "exportName": "createSku",
+      "renderType": "confirmation",
+      "requiresConfirmation": true
+    },
+    {
+      "id": "open_knowledge_base_create",
+      "title": "创建知识库",
+      "description": "复杂流程跳转到知识库创建页面",
+      "entry": "./apis/open-knowledge-base-create.ts",
+      "exportName": "openKnowledgeBaseCreate",
+      "renderType": "link-card"
+    },
+    {
+      "id": "get_user_profile",
+      "title": "查询用户信息",
+      "description": "查询用户当前信息并展示到会话中",
+      "entry": "./apis/get-user-profile.ts",
+      "exportName": "getUserProfile",
+      "renderType": "mixed"
+    }
+  ],
+  "components": []
+}

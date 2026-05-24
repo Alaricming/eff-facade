@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@eff-facade/core": ["packages/core/src/index.ts"],
+      "@eff-facade/facade": ["packages/facade/src/index.ts"],
+      "@eff-facade/model-adapter": ["packages/model-adapter/src/index.ts"],
+      "@eff-facade/runtime": ["packages/runtime/src/index.ts"],
+      "@eff-facade/schema-ui": ["packages/schema-ui/src/index.ts"],
+      "@eff-facade/skill-creator": ["packages/skill-creator/src/index.ts"],
+      "@eff-facade/skill-loader": ["packages/skill-loader/src/index.ts"],
+      "@eff-facade/vite-plugin": ["packages/vite-plugin/src/index.ts"],
+      "@eff-facade/vue-renderer": ["packages/vue-renderer/src/index.ts"]
+    },
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}

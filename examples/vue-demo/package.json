@@ -1,0 +1,26 @@
+{
+  "name": "@eff-facade/vue-demo",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "typecheck": "vue-tsc --noEmit",
+    "validate:skills": "node scripts/validate-skills.mjs"
+  },
+  "dependencies": {
+    "@eff-facade/facade": "workspace:*",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@iconify/vue": "^4.1.2",
+    "vite": "^6.0.5",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.6.3",
+    "vue-tsc": "^2.2.0"
+  }
+}

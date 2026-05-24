@@ -1,0 +1,33 @@
+{
+  "name": "@eff-facade/facade",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./vite": {
+      "types": "./dist/vite.d.ts",
+      "import": "./dist/vite.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -b tsconfig.json"
+  },
+  "dependencies": {
+    "@eff-facade/core": "workspace:*",
+    "@eff-facade/model-adapter": "workspace:*",
+    "@eff-facade/runtime": "workspace:*",
+    "@eff-facade/schema-ui": "workspace:*",
+    "@eff-facade/skill-loader": "workspace:*",
+    "@eff-facade/vite-plugin": "workspace:*",
+    "@eff-facade/workbench": "workspace:*",
+    "@eff-facade/vue-renderer": "workspace:*"
+  }
+}

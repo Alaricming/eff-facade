@@ -1,0 +1,19 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "references": [
+    { "path": "../core" },
+    { "path": "../runtime" },
+    { "path": "../schema-ui" },
+    { "path": "../model-adapter" },
+    { "path": "../skill-loader" },
+    { "path": "../vite-plugin" },
+    { "path": "../workbench" },
+    { "path": "../vue-renderer" }
+  ],
+  "include": ["src"]
+}
