@@ -18,7 +18,7 @@
 pnpm add @eff-facade/facade
 ```
 
-`@eff-facade/facade` 是宿主项目唯一需要直接安装的 Facade 包。主包会聚合导出 Runtime、Vue Workbench、Schema UI、Mock Model Adapter 和 Vite 插件。
+`@eff-facade/facade` 是宿主项目唯一需要直接安装的 Facade 包。主包会聚合导出 Runtime、Workbench、Schema UI、Mock Model Adapter 和 Vite 插件。
 
 ## 3. Vite 配置
 
@@ -44,6 +44,27 @@ export default defineConfig({
 - 读取每个 Skill 的 `skill.md`。
 - 生成原子能力和原子组件动态 import。
 - 提供 `virtual:eff-facade/skills` 虚拟模块。
+
+## 3.1 MVP Tailwind 配置
+
+Stage 9 阶段，Workbench 已归属 `packages/workbench`，但仍使用 Tailwind class 作为 UI 样式表达。
+
+Vue Demo 需要在 Tailwind `content` 中扫描 Workbench 和 Vue renderer：
+
+```ts
+import type { Config } from 'tailwindcss'
+
+export default {
+  content: [
+    './index.html',
+    './src/**/*.{vue,ts}',
+    '../../packages/vue-renderer/src/**/*.{vue,ts}',
+    '../../packages/workbench/src/**/*.{vue,ts}'
+  ]
+} satisfies Config
+```
+
+真实发布后不应要求宿主扫描 Facade 内部源码。Stage 10 需要通过 Web Component / mount API 和独立样式产物收口该问题。
 
 ## 4. 宿主 Skills 目录
 

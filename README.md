@@ -59,8 +59,10 @@ pnpm dev:mock
 Run the Vue demo:
 
 ```bash
-pnpm dev:vue -- --host 127.0.0.1 --port 5174
+pnpm dev:vue
 ```
+
+The Vue demo runs on `http://127.0.0.1:5174/`.
 
 Validate and build:
 
@@ -78,4 +80,3 @@ Start from:
 - [Implementation Plan](./prd/implementation-plan.md)
 - [Host Integration Guide](./prd/host-integration-guide.md)
 - [MVP Acceptance Checklist](./prd/mvp-acceptance-checklist.md)
-

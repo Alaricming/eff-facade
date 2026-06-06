@@ -7,11 +7,10 @@
   "scripts": {
     "build": "pnpm -r build",
     "typecheck": "pnpm -r typecheck",
-    "dev:vue": "pnpm --filter @eff-facade/vue-demo dev",
+    "dev:vue": "pnpm --filter @eff-facade/vue-demo exec vite --host 127.0.0.1 --port 5174 --strictPort",
     "dev:mock": "pnpm --filter @eff-facade/mock-server dev"
   },
   "devDependencies": {
     "typescript": "^5.6.3"
   }
 }
-

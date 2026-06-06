@@ -5,9 +5,9 @@
 当前阶段：
 
 - P1 MVP Vue Demo 闭环已经进入可演示状态。
-- 当前重心进入 P1.5 / Stage 7：协议与开发者体验收束。
-- 后续优先级是 `protocol-v0.1`、Schema UI MVP、Skill 开发者文档和宿主项目接入体验。
-- Workbench 视觉体验已经具备继续承载验证的基础，短期不再作为主要投入方向。
+- 当前重心进入 Stage 9：Workbench 架构归位与包边界收口。
+- Workbench 已从 `vue-renderer` 中迁出，归属 `packages/workbench`。
+- 后续优先级是完成 Stage 9 验收，再进入 Stage 10 Web Component / mount API 设计。
 
 当前文档：
 
@@ -23,6 +23,7 @@
 - [skill-loading.md](./skill-loading.md)：Skill 装载与注册机制
 - [protocol-v0.1.md](./protocol-v0.1.md)：AI Facade 协议 v0.1
 - [stage-7-protocol-alignment.md](./stage-7-protocol-alignment.md)：Stage 7 协议对齐清单
+- [stage-9-workbench-boundary.md](./stage-9-workbench-boundary.md)：Stage 9 Workbench 与 renderer 边界收口
 - [workbench-ux.md](./workbench-ux.md)：Workbench 交互设计
 - [visual-and-components.md](./visual-and-components.md)：视觉、组件规范与 Design Language v0.1
 - [mvp-implementation-breakdown.md](./mvp-implementation-breakdown.md)：MVP 实现拆解
