@@ -28,7 +28,7 @@
 - Stage 9：Workbench 架构归位。
 - Stage 10：Workbench Web Component 输出。
 
-当前项目正在进行 Stage 9 收口。根据架构复盘，Workbench 不应继续归属于 `vue-renderer`，已迁移为 Facade 内置核心应用；Stage 9 需要完成包边界、接入文档、样式扫描和验收清单收束，再进入 Stage 10 Web Component / mount API。
+当前项目已经完成 Stage 9 收口，正在进入 Stage 10 Web Component / mount API 方案设计。Stage 10 继续遵守文档先行：先确认挂载 API、样式策略、包入口和验证 demo，再开始实现。
 
 ## 3. Stage 0：工程初始化
 
@@ -442,6 +442,8 @@
 ## 14. Stage 10：Workbench Web Component 输出
 
 目标：让宿主项目以框架无关方式接入 Facade Workbench。
+
+详细方案见 [stage-10-web-component.md](./stage-10-web-component.md)。
 
 任务：
 

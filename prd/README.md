@@ -5,9 +5,9 @@
 当前阶段：
 
 - P1 MVP Vue Demo 闭环已经进入可演示状态。
-- 当前重心进入 Stage 9：Workbench 架构归位与包边界收口。
-- Workbench 已从 `vue-renderer` 中迁出，归属 `packages/workbench`。
-- 后续优先级是完成 Stage 9 验收，再进入 Stage 10 Web Component / mount API 设计。
+- Stage 9：Workbench 架构归位与包边界收口已完成。
+- 当前重心进入 Stage 10：Workbench Web Component / mount API 方案设计。
+- Stage 10 仍然文档先行，方案确认后再开始实现。
 
 当前文档：
 
@@ -24,6 +24,7 @@
 - [protocol-v0.1.md](./protocol-v0.1.md)：AI Facade 协议 v0.1
 - [stage-7-protocol-alignment.md](./stage-7-protocol-alignment.md)：Stage 7 协议对齐清单
 - [stage-9-workbench-boundary.md](./stage-9-workbench-boundary.md)：Stage 9 Workbench 与 renderer 边界收口
+- [stage-10-web-component.md](./stage-10-web-component.md)：Stage 10 Workbench Web Component 方案
 - [workbench-ux.md](./workbench-ux.md)：Workbench 交互设计
 - [visual-and-components.md](./visual-and-components.md)：视觉、组件规范与 Design Language v0.1
 - [mvp-implementation-breakdown.md](./mvp-implementation-breakdown.md)：MVP 实现拆解
